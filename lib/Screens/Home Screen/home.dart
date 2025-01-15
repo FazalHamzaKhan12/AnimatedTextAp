@@ -1,6 +1,6 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:animatedtext/Screens/Drawer/drawer.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -21,16 +21,16 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-        title: Text(
+        title: const Text(
           "Animated TextKit",
           style: TextStyle(
               color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
-      drawer: DrawerScreen(),
+      drawer: const DrawerScreen(),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -46,7 +46,9 @@ class HomeScreen extends StatelessWidget {
               TypewriterAnimatedText(
                 "Rainbow",
                 textStyle: const TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold, color: Colors.amberAccent),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.amberAccent),
               ),
             ],
             repeatForever: true,
