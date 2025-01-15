@@ -6,8 +6,13 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 class DrawerScreen extends StatelessWidget {
   const DrawerScreen({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
+
+
+
     return Drawer(
       child: Container(
         decoration: const BoxDecoration(
@@ -91,6 +96,32 @@ class DrawerScreen extends StatelessWidget {
                       Navigator.pop(context);
                       if (ModalRoute.of(context)?.settings.name != '/fade_animation') {
                         Navigator.pushReplacementNamed(context, '/fade_animation');
+                      }
+                    },
+                  ),
+                  ListTile(
+                    title: const Text(
+                      "Rotate Animation",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    leading: const Icon(
+                      Icons.opacity,
+                      color: Colors.white,
+                    ),
+                    subtitle: Text(
+                      "Rotate Text Animation",
+                      style: TextStyle(
+                        color: Colors.teal[100],
+                      ),
+                    ),
+                    onTap: () {
+                      // Close the drawer and check the current route
+                      Navigator.pop(context);
+                      if (ModalRoute.of(context)?.settings.name != '/rotate_animation') {
+                        Navigator.pushReplacementNamed(context, '/rotate_animation');
                       }
                     },
                   ),

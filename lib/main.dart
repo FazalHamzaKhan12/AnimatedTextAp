@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Screens/Drawer/Rotate Animation/rotateanimation.dart';
 import 'Screens/Home Screen/home.dart';
 import 'Screens/Drawer/Fading Animation/fadeanimation.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => const HomeScreen(),
         '/fade_animation': (context) => const FadeTextAnimation(),
+        '/rotate_animation': (context) => const RotateAnimation(),
       },
     );
   }

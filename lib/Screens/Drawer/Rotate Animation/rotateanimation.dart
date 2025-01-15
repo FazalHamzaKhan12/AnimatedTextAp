@@ -1,18 +1,19 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:animatedtext/Screens/Drawer/drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
-class FadeTextAnimation extends StatefulWidget {
-  const FadeTextAnimation({super.key});
+
+
+class RotateAnimation extends StatefulWidget {
+  const RotateAnimation({super.key});
 
   @override
-  _FadeTextAnimationState createState() => _FadeTextAnimationState();
+  State<RotateAnimation> createState() => _RotateAnimationState();
 }
+bool _animate = false; // Flag to control the animation
+bool _showText = true;
 
-class _FadeTextAnimationState extends State<FadeTextAnimation> {
-  bool _animate = false; // Flag to control the animation
-  bool _showText = true; // Flag to control the placeholder text
-
+class _RotateAnimationState extends State<RotateAnimation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +30,7 @@ class _FadeTextAnimationState extends State<FadeTextAnimation> {
             ),
           ),
         ),
-        title: const Text("Fade Animation"),
+        title: const Text("Rotate Animation"),
         centerTitle: true,
       ),
       drawer: const DrawerScreen(),
@@ -62,8 +63,8 @@ class _FadeTextAnimationState extends State<FadeTextAnimation> {
               _animate
                   ? AnimatedTextKit(
                 animatedTexts: [
-                  FadeAnimatedText(
-                    "Fade Animation",
+                  RotateAnimatedText(
+                    "Rotate Animation",
                     textStyle: const TextStyle(
                       color: Colors.amberAccent,
                       fontSize: 40,
