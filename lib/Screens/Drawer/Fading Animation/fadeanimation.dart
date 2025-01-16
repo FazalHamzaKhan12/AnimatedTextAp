@@ -69,7 +69,7 @@ class _FadeTextAnimationState extends State<FadeTextAnimation> {
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
                     ),
-                    duration: const Duration(milliseconds: 2000),
+                    duration: const Duration(minutes: 1),
                   ),
                 ],
                 isRepeatingAnimation: false, // Run animation once

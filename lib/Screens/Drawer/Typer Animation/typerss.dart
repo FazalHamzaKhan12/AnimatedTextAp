@@ -69,7 +69,7 @@ class _TyperAnimationState extends State<TyperAnimation> {
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
                     ),
-                    speed: const Duration(milliseconds: 100),
+                    speed: const Duration(seconds: 2),
                   ),
                 ],
                 isRepeatingAnimation: false, // Run animation once

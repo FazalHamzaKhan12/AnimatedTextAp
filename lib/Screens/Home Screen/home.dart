@@ -44,6 +44,7 @@ class HomeScreen extends StatelessWidget {
           child: AnimatedTextKit(
             animatedTexts: [
               TypewriterAnimatedText(
+                speed: Duration(seconds: 3),
                 "Welcome To Text Animation",
                 textStyle: const TextStyle(
                     fontSize: 30,

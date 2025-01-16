@@ -64,6 +64,7 @@ class _FlickerAnimation extends State<FlickerAnimation> {
                   animatedTexts: [
                     FlickerAnimatedText(
                       "Flicker Animation",
+                      speed: Duration(seconds: 33),
                       textStyle: const TextStyle(
                           fontSize: 35,
                           color: Colors.amber,

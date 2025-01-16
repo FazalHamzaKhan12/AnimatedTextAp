@@ -75,16 +75,20 @@ class _ColorizeAnimationState extends State<ColorizeAnimation> {
                 AnimatedTextKit(
                   animatedTexts: [
                     ColorizeAnimatedText(
+                      speed: Duration(seconds: 5),
                       'Hamza',
                       textStyle: colorizeTextStyle,
                       colors: colorizeColors,
                     ),
                     ColorizeAnimatedText(
+                      speed: Duration(seconds: 5),
                       'Bill Gates',
                       textStyle: colorizeTextStyle,
                       colors: colorizeColors,
                     ),
                     ColorizeAnimatedText(
+                      speed: Duration(seconds: 5),
+
                       'Steve Jobs',
                       textStyle: colorizeTextStyle,
                       colors: colorizeColors,

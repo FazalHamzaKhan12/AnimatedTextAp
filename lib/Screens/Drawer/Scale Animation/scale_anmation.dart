@@ -64,6 +64,7 @@ class _ScaleTextAnimation extends State<ScaleTextAnimation> {
                   ? AnimatedTextKit(
                 animatedTexts: [
                   ScaleAnimatedText(
+                    duration: Duration(seconds: 40),
                     "ScaleAnimatedText",
                     textStyle: const TextStyle(
                       color: Colors.amberAccent,

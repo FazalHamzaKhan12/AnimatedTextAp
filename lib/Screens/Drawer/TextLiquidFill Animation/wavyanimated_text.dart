@@ -63,6 +63,7 @@ class _WavyAnimatedTextScreenState extends State<WavyAnimatedTextScreen> {
                 AnimatedTextKit(
                   animatedTexts: [
                     WavyAnimatedText(
+                      speed: Duration(seconds: 5),
                       "Wavy Animation",
                       textStyle: const TextStyle(
                         color: Colors.amberAccent,
